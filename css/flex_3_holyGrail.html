@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset-"utf-8">
+  <style>
+    body{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .container{
+      display:flex;
+      flex-direction: column;
+      width:800px;
+      border:1px solid gray;
+    }
+    header{
+      border-bottom:1px solid gray;
+      padding-left:20px;
+    }
+    footer{
+      border-top:1px solid gray;
+      padding-left:20px;
+      text-align:center;
+    }
+    .content{
+      display:flex;
+    }
+    .content nav{
+      border-right:1px solid gray;
+    }
+    .content aside{
+      border-left:1px solid gray;
+    }
+    nav, aside{
+      flex-basis: 150px; /*하는 순간 화면 크기가 줄어들 때 nav,main,aside모두 크기가 줄어듦 */
+      flex-shrink: 0; /*얘 때문에 양 옆의 nav, aside는 크기가 줄어들지 않고 main만 크기가 줄어듦*/
+    }
+    main{
+      padding:10px;
+    }
+    nav{
+      order:0;
+    }
+    main{
+      order:1;
+    }
+    aside{
+      order:2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>생활코딩</h1>
+    </header>
+    <section class="content">
+      <nav>
+        <ul>
+          <li>html</li>
+          <li>css</li>
+          <li>javascript</li>
+        </ul>
+      </nav>
+      <main>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. , labore non natus aspernatur fuga quidem. Quidem voluptatem maxime modi adipisci nihil placeat ipsum molestiae repellendus similique doloribus consequatur impedit, saepe quisquam perferendis, consequuntur quae a, blanditiis, temporibus commodi consectetur. Architecto sequi temporibus earum ipsa repudiandae voluptatum. Aspernatur eos odit laboriosam unde itaque modi deleniti? Sequi repudiandae ipsa excepturi, possimus, temporibus vel vero! Corporis necessitatibus, dolor consectetur alias impedit nulla pariatur, vero beatae voluptates cumque, aliquam praesentium dolorem debitis architecto animi recusandae maiores et eos modi sit optio quae provident! Natus mollitia laborum alias veniam ullam accusantium reprehenderit, temporibus ipsa, molestiae explicabo fugit sint officiis sequi doloribus animi adipisci. Dolorum
+      </main>
+      <aside>
+        AD
+      </aside>
+    </section>
+    <footer>
+      <a href="http://opentutorials.org/course/1">홈페이지</a>
+    </footer>
+  </div>
+</body>
+</html>

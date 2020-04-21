@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .container{
+      background-color:powderblue;
+      height:400px;
+      display:flex;
+      flex-direction:row;
+    }
+    .item{
+      background-color:tomato;
+      color:white;
+      border:1px solid white;
+      flex-grow:1;
+    }
+    .item:nth-child(1){
+      flex-basis: 150px;
+      flex-shrink: 1;
+    }
+    .item:nth-child(2){
+      flex-grow:2;
+      /* flex-basis:200px; */
+      flex-basis: 150px;
+      flex-shrink: 2; /*1로 설정했을 때 화면크기가 줄어들면 2의 크기는 px로 고정임에도 불구하고 같이 줄어듦. 0으로 설정하면 2는 줄어들지 않음 1st에서 1로, 2nd에서 2로 지정하면 1:2의 비율로 크기 감소를 분담함 */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+  </div>
+</body>
+</html>
