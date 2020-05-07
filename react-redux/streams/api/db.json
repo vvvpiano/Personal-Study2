@@ -9,6 +9,23 @@
       "title": "Other Stream",
       "description": "Here's some stream",
       "id": 2
+    },
+    {
+      "title": "I created this stream",
+      "description": "This was made by me!",
+      "userId": null,
+      "id": 3
+    },
+    {
+      "title": "Stream created by me",
+      "description": "This change was made by a PATCH request",
+      "userId": "111098462535511801220",
+      "id": 4
+    },
+    {
+      "title": "Me Streaming Component Reuse!",
+      "description": "This stream is about refactoring again!",
+      "id": 5
     }
   ]
 }
